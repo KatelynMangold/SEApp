@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-    android:id="@+id/Home"
+    android:id="@+id/homeButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -14,16 +14,24 @@
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="0dp"
             app:layout_scrollFlags="scroll|enterAlways"></androidx.appcompat.widget.Toolbar>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="@string/home" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/homeButton1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
 
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        tools:ignore="DuplicateIds">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/searchBar"
