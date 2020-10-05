@@ -36,16 +36,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         incr.setOnClickListener(this);
         decr.setOnClickListener(this);
 
-        int progr = 0;
-        progr = Integer.parseInt(incr.getText().toString());
-        if (progr <= 90) {
-            progr++;
+//        incr.setOnClickListener(new View.OnClickListener()
+//        {
+//            @Override
+//            public void onClick(View v)
+//            {
+//
+//            }
+//        });
         }
-    }
 
     @Override
-    public void onClick(View v)
-    {
+    public void onClick(View v) {
 
     }
 }
