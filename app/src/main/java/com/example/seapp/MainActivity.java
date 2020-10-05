@@ -6,12 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
+import android.widget.Button;
+import android.widget.Toast;
 
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +27,25 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, search.class));
             }
-        });{
+        });
 
+        Button incr;
+        Button decr;
+        incr = (Button) findViewById(R.id.button_incr);
+        decr = (Button) findViewById(R.id.button_decr);
+        incr.setOnClickListener(this);
+        decr.setOnClickListener(this);
+
+        int progr = 0;
+        progr = Integer.parseInt(incr.getText().toString());
+        if (progr <= 90) {
+            progr++;
         }
+    }
+
+    @Override
+    public void onClick(View v)
+    {
 
     }
 }
