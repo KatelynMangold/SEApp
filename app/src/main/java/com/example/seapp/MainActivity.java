@@ -12,11 +12,13 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity
+{
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -28,26 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, search.class));
             }
         });
-
-        Button incr;
-        Button decr;
-        incr = (Button) findViewById(R.id.button_incr);
-        decr = (Button) findViewById(R.id.button_decr);
-        incr.setOnClickListener(this);
-        decr.setOnClickListener(this);
-
-//        incr.setOnClickListener(new View.OnClickListener()
-//        {
-//            @Override
-//            public void onClick(View v)
-//            {
-//
-//            }
-//        });
-        }
-
-    @Override
-    public void onClick(View v) {
 
     }
 }
