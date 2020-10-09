@@ -35,56 +35,39 @@
         app:layout_constraintVertical_bias="0.095"
         tools:progress="90" />
 
-    <!--    <TextView-->
-    <!--        android:id="@+id/text_view_progress"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
-    <!--        app:layout_constraintBottom_toBottomOf="@+id/progressBar"-->
-    <!--        app:layout_constraintEnd_toEndOf="@+id/progressBar"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/progressBar"-->
-    <!--        app:layout_constraintTop_toTopOf="@+id/progressBar"-->
-    <!--        tools:text="90%"-->
-    <!--        />-->
-    <!--    <Button-->
-    <!--        android:id="@+id/button_decr"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="-10%"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/progressBar"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/progressBar"-->
-    <!--        />-->
-    <!--    <Button-->
-    <!--        android:id="@+id/button_incr"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="+10%"-->
-    <!--        app:layout_constraintEnd_toEndOf="@+id/progressBar"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/progressBar"-->
-    <!--        />-->
     <TextView
-        android:layout_width="46dp"
-        android:layout_height="0dp"
-        android:text="0%"
-        app:layout_constraintBottom_toTopOf="@+id/addFood"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/text_view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="@+id/progressBar"
+        tools:text="90%"
         />
 
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="231dp"
-        android:layout_height="141dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.411"
-        app:layout_constraintStart_toStartOf="parent"
+    <Button
+        android:id="@+id/button_decr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-10%"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
         app:layout_constraintTop_toBottomOf="@+id/progressBar"
-        app:layout_constraintVertical_bias="0.0" />
+
+        />
+
+    <Button
+        android:id="@+id/button_incr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+10%"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+
+        />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
