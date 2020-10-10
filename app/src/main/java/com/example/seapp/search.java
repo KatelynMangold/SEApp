@@ -23,27 +23,21 @@ import com.google.android.material.tabs.TabLayout;
 
 
 public class search extends AppCompatActivity {
-    private Button homeButton;
+    //private Button homeButton;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
-
-
-        homeButton = (Button) findViewById(R.id.homeButton);
+        Button homeButton;
+        homeButton = (Button) findViewById(R.id.homebutton);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               openMainActivity();
+               startActivity(new Intent(search.this, MainActivity.class));
             }
         }); {
 
         }
     }
-    public void openMainActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
 }
