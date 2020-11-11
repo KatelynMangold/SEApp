@@ -5,4 +5,9 @@
     <string name="tab3">Tab3</string>
     <string name="home1">Home</string>
     <string name="calories">Calories</string>
+    <string name="mason_test" />
+    <string name="foodname" />
+    <string name="enter_desired_food">Enter Desired Food</string>
+    <string name="view_data" />
+    <string name="add_food" />
 </resources>
