@@ -10,4 +10,9 @@
     <string name="enter_desired_food">Enter Desired Food</string>
     <string name="view_data" />
     <string name="add_food" />
+    <string name="view">View</string>
+    <string name="add">Add</string>
+    <string name="foodlog" />
+    <string name="food_log2">Food Log2</string>
+    <string name="food_log" />
 </resources>
