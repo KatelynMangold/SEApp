@@ -16,14 +16,35 @@
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_scrollFlags="scroll|enterAlways"></androidx.appcompat.widget.Toolbar>
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark" >
 
         <Button
             android:id="@+id/homebutton"
             android:layout_width="114dp"
             android:layout_height="wrap_content"
-            android:text="@string/home" />
+            android:text="@string/home"
+            android:textColor="#000000"
+            android:typeface="normal"
+            android:textSize="17sp"
+            style="?android:attr/buttonBarButtonStyle"/>
 
+        <Button
+            android:id="@+id/logbutton"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="Food Log"
+            android:textColor="#000000"
+            android:typeface="normal"
+            android:textSize="17sp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
@@ -50,7 +71,7 @@
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="50dp"
                 android:onClick="viewdata"
-                android:text="View"
+                android:text="@string/view"
                 android:textSize="18sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:onClick="addFood"
-                android:text="Add"
+                android:text="@string/add"
                 android:textSize="18sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintStart_toStartOf="parent"
@@ -75,14 +96,13 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="12dp"
                 android:gravity="center"
                 android:text="@string/foodname"
                 android:textSize="18sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/searchView" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
                 android:id="@+id/editFoodName"

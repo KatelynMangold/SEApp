@@ -23,5 +23,9 @@
     <string name="mg">mg</string>
     <string name="dash">/</string>
     <string name="todo">TODO</string>
-
+    <string name="view">View</string>
+    <string name="add">Add</string>
+    <string name="foodlog" />
+    <string name="food_log2">Food Log2</string>
+    <string name="food_log" />
 </resources>

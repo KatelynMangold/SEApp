@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class search extends AppCompatActivity {
-    EditText foodname,  updateold, updatenew, delete ;
+    EditText foodname, updateold, updatenew, delete ;
     myDbAdapter helper;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,16 @@ public class search extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                startActivity(new Intent(search.this, MainActivity.class));
+            }
+        }); {
+
+        }
+        Button logButton;
+        logButton = (Button) findViewById(R.id.logbutton);
+        logButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(search.this, FoodLog.class));
             }
         }); {
 
