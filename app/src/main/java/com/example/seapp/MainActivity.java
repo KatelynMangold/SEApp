@@ -237,6 +237,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        
+
         Spinner SodiumSpinner = findViewById(R.id.Sodiumspinner);
         SodiumSpinner.setAdapter(SodiumAdapter);
         SodiumSpinner.setSelection(LastClickSodium);

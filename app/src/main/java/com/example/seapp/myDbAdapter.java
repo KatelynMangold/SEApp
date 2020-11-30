@@ -37,13 +37,17 @@ public class myDbAdapter{
         return buffer.toString();
     }
 
-    public  int delete(String uname)
+    /*public String getNutritionInfo(){
+        SQLiteDatabase db = myhelper.getReadableDatabase();
+        String[] columns = {myDBHelper.UID, myDBHelper.N}
+    }*/
+
+    public int delete(String uname)
     {
         SQLiteDatabase db = myhelper.getWritableDatabase();
         String[] whereArgs ={uname};
 
-        int count =db.delete(myDBHelper.TABLE_NAME , myDBHelper.NAME+" = ?",whereArgs);
-        return  count;
+        return db.delete(myDBHelper.TABLE_NAME, myDBHelper.NAME+" = ?",whereArgs);
     }
 
     public int updateName(String oldName , String newName)

@@ -6,17 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+>
+    <LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_red_dark">
 
-    <Button
-        android:id="@+id/homebutton2"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="114dp"
-        android:layout_height="wrap_content"
-        android:text="@string/home"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        android:typeface="normal" />
+        <Button
+            android:id="@+id/homebutton2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:typeface="normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"

@@ -96,7 +96,7 @@ public class search extends AppCompatActivity {
         }
 
     }
-    public void delete( View view)
+    public void delete(View view)
     {
         String uname = delete.getText().toString();
         if(uname.isEmpty())

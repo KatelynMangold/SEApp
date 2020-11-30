@@ -28,4 +28,6 @@
     <string name="foodlog" />
     <string name="food_log2">Food Log2</string>
     <string name="food_log" />
+    <string name="Delete" />
+    <string name="delete">Delete</string>
 </resources>
